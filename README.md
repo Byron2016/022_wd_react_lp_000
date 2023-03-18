@@ -58,6 +58,10 @@
 
   - [Bootstrap Icons](https://icons.getbootstrap.com/)
 
+- react-multi-carousel
+
+  - [react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel)
+
 - Shields.io
 
   - [Shields.io](https://shields.io/)
@@ -146,6 +150,12 @@
 
     ```bash
       npm i bootstrap-icons
+    ```
+
+  - **Install react-multi-carousel**
+
+    ```bash
+      npm i react-multi-carousel
     ```
 
   [⏪(Back to top)](#table-of-contents)
