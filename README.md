@@ -20,7 +20,7 @@
 
   - <details> <summary>List of Steps</summary>
 
-    - [Install & Setup Vite + React + Bootstrap 5](#-artificial-intelligence-and-bots)
+    - [Install and Setup Vite React and Bootstrap 5](#-install-setup-vite-react-bootstrap-5)
 
    </details>
 
@@ -52,6 +52,7 @@
 - Bootstrap 5
 
   - [Install & Setup Vite + React + Typescript + Bootstrap 5](https://frontendshape.com/post/install-setup-vite-react-typescript-bootstrap-5)
+  - [React Bootstrap](https://react-bootstrap.github.io/)
 
 - Shields.io
 
@@ -65,7 +66,7 @@
 
 # Steps
 
-- **Install & Setup Vite + React + Bootstrap 5**
+- **Install and Setup Vite React and Bootstrap 5**
 
   - **Create Vite Project For React**
 
@@ -116,4 +117,25 @@
       npm install react-bootstrap bootstrap
     ```
 
-[⏪(Back to top)](#table-of-contents)
+  - **After install add a bootstrap 5 element in app.jsx.**
+
+    - Add a new file components/NavBar.jsx
+    - Copy [NavBar](https://react-bootstrap.github.io/components/navbar/) example
+    - Add **NavBar** component to **app.jsx**
+
+    ```js
+    import "bootstrap/dist/css/bootstrap.min.css";
+    import BasicExample from "./components/NavBar";
+
+    function App() {
+      return (
+        <div className="App">
+          <BasicExample />
+        </div>
+      );
+    }
+
+    export default App;
+    ```
+
+  [⏪(Back to top)](#table-of-contents)
