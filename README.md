@@ -54,6 +54,10 @@
   - [Install & Setup Vite + React + Typescript + Bootstrap 5](https://frontendshape.com/post/install-setup-vite-react-typescript-bootstrap-5)
   - [React Bootstrap](https://react-bootstrap.github.io/)
 
+- Bootstrap Icons
+
+  - [Bootstrap Icons](https://icons.getbootstrap.com/)
+
 - Shields.io
 
   - [Shields.io](https://shields.io/)
@@ -66,7 +70,7 @@
 
 # Steps
 
-- **Install and Setup Vite React and Bootstrap 5**
+- **Install and Setup Vite React Bootstrap 5 and Bootstrap Icons**
 
   - **Create Vite Project For React**
 
@@ -136,6 +140,12 @@
     }
 
     export default App;
+    ```
+
+  - **Install Bootstrap Icons**
+
+    ```bash
+      npm i bootstrap-icons
     ```
 
   [⏪(Back to top)](#table-of-contents)
