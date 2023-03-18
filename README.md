@@ -62,6 +62,10 @@
 
   - [react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel)
 
+- MailChimp
+
+  - [MailChimp](https://mailchimp.com/es/)
+
 - Shields.io
 
   - [Shields.io](https://shields.io/)
@@ -165,10 +169,10 @@
     export default App;
     ```
 
-  - **Install Bootstrap Icons**
+  - **Install React Bootstrap Icons**
 
     ```bash
-      npm i bootstrap-icons
+      npm i react-bootstrap-icons
     ```
 
   - **Install react-multi-carousel**
@@ -176,5 +180,102 @@
     ```bash
       npm i react-multi-carousel
     ```
+
+  [⏪(Back to top)](#table-of-contents)
+
+- **Adding Custom Environment Variables**
+
+  - **Create React App**
+
+    - Available with react-scripts@0.2.3 and higher.
+    - By default you will have NODE*ENV defined for you, and any other environment variables starting with REACT_APP*.
+    - Do not store any secrets (such as private API keys) in your React app!. Environment variables are embedded into the build, meaning anyone can view them by inspecting your app's files.
+
+  - **Vite**
+
+    - Note that Vite doesn't load .env files by default as the files to load can only be determined after evaluating the Vite config [Using Environment Variables in Config](https://main.vitejs.dev/config/)
+
+    - [Using Environment Variables in Config](https://stackoverflow.com/questions/66389043/how-can-i-use-vite-env-variables-in-vite-config-js/75778756#75778756)
+
+      - Modify file **vite.config.js**
+
+        ```js
+        import "bootstrap/dist/css/bootstrap.min.css";
+        import BasicExample from "./components/NavBar";
+
+        function App() {
+          return (
+            <div className="App">
+              <BasicExample />
+            </div>
+          );
+        }
+
+        export default App;
+        ```
+
+      - Add these variables to a new **.env** or **.env.local** file
+
+        ```js
+        REACT_APP_MAILCHIMP_URL = "https://gmail.xxxx.com/subscribe/post";
+        REACT_APP_MAILCHIMP_U = "xxxxxxxxxxxxxxxxx";
+        REACT_APP_MAILCHIMP_ID = "YYYYYYYYYYYY";
+        ```
+
+      - Add a new component **component/Test.js** file
+
+        ```js
+        export const Test = () => {
+          console.log(import.meta.env.VITE_SOME_KEY); // 123
+          console.log(process.env.REACT_APP_MAILCHIMP_URL);
+
+          const a_var = `${process.env.REACT_APP_MAILCHIMP_URL}`;
+          console.log(a_var);
+
+          return (
+            <div>
+              <small><b>{process.env.NODE_ENV}</b></small>
+              <br>
+              <small><b>{process.env.REACT_APP_MAILCHIMP_URL}</b></small>
+            </div>
+          );
+        };
+        ```
+
+      - Add **Test component** to **App.jsx**
+
+  [⏪(Back to top)](#table-of-contents)
+
+- **For contact form.**
+
+  - **Create a Contact.jsx file component**
+
+    - Add a new file components/Contact.jsx
+
+  - **Install npm dependecies**
+
+    ```bash
+      npm i express cors nodemailer
+    ```
+
+  - **Create a Server.js file to send servers**
+
+    - Add a new file /server.js
+    - Configure gmail user and password
+      - In google apps' icon select acconts
+      - Select security
+      - Less secure app access
+      - d
+
+  - **Install npm react-mailchimp-subscribe**
+
+    ```bash
+      npm i react-mailchimp-subscribe
+    ```
+
+  - **[MailChimp](https://mailchimp.com/es/)**
+
+    - Create a new account
+    - Copy **Signup form URL** Audience/Signup forms/Form builder/Signup form URL
 
   [⏪(Back to top)](#table-of-contents)
