@@ -146,6 +146,25 @@
     export default App;
     ```
 
+    - Add a new file components/Pills.jsx
+    - Copy [Pills](https://react-bootstrap.netlify.app/components/navs/) example
+    - Add **Pills** component to **app.jsx**
+
+    ```js
+    import "bootstrap/dist/css/bootstrap.min.css";
+    import PillsExample from "./components/Pills";
+
+    function App() {
+      return (
+        <div className="App">
+          <PillsExample />
+        </div>
+      );
+    }
+
+    export default App;
+    ```
+
   - **Install Bootstrap Icons**
 
     ```bash
