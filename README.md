@@ -21,6 +21,7 @@
   - <details> <summary>List of Steps</summary>
 
     - [Install and Setup Vite React and Bootstrap 5](#-install-setup-vite-react-bootstrap-5)
+    - [Add Animation.css](#-add-animation.css)
 
    </details>
 
@@ -65,6 +66,10 @@
 - MailChimp
 
   - [MailChimp](https://mailchimp.com/es/)
+
+- Animate.css
+
+  - [Animate.css](https://animate.style/)
 
 - Shields.io
 
@@ -277,5 +282,21 @@
 
     - Create a new account
     - Copy **Signup form URL** Audience/Signup forms/Form builder/Signup form URL
+
+  [⏪(Back to top)](#table-of-contents)
+
+- **Add Animation.css**
+
+  - **Install npm dependecies**
+
+    ```bash
+      npm install animate.css --save
+    ```
+
+  - **React on Screen**
+
+    ```bash
+      npm install react-on-screen
+    ```
 
   [⏪(Back to top)](#table-of-contents)
