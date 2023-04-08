@@ -402,7 +402,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -1; */
   /*al poner esto y los tabs no funcionan habría que revisar.*/
   padding: 120px 0;
-  z-index: -1;
+  /* z-index: -1; */
   position: relative;
   background-color: black;
 }
