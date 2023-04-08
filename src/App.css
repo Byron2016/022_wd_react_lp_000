@@ -401,7 +401,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   /* padding: 120px 0;
   z-index: -1; */
   /*al poner esto y los tabs no funcionan habría que revisar.*/
-  padding: 80px 0;
+  padding: 120px 0;
+  z-index: -1;
   position: relative;
   background-color: black;
 }
@@ -632,6 +633,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Footer Css ************/
+/* i:1.40.20  -  f:1.50.10 */
 .footer {
   padding: 0 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
