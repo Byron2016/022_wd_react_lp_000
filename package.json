@@ -2,11 +2,11 @@
   "name": "022_wd_react_lp_000",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "mailserver": "nodemon emailServer/server"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
@@ -26,6 +26,8 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
     "vite": "^4.2.0"
   }
 }
